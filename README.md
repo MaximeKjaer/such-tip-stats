@@ -11,3 +11,4 @@ dogetipdata.json in the frontend is just some data that I've collected over the 
 ##Dependencies
  - Python 2.7
  - Praw module
+ - (in order to test the frontend (index.html), you may need to store it on a local server such as Wamp, or the one that Brackets uses -- Javascript doesn't like fetching local files with XHR)
