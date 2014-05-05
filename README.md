@@ -18,6 +18,7 @@ dogetipdata.json in the frontend is just some data that I've collected over the 
 
 ##To-do list
  - Get dataCrusher.py integrated into suchDelay.py
+ - add ability to find biggest single tip
  - fix the "hour" field on hourly.json
  - make the frontend accept the new JSON format (single, minified file)
  - better responsive design (I've started, but mobile still isn't working as well as it should)
