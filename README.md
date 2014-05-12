@@ -3,7 +3,7 @@ such-tip-stats
 
 Stats for /u/dogetipbot.
 
-I'm trying to do weekly releases on Mondays, but I'll skip this week. Too busy for Josh Wise!
+I'm trying to do weekly releases on Mondays, but I'll skip this week. Too busy voting for Josh Wise!
 
 /!\ Prototype / proof of concept / Work in progress. /!\
 
