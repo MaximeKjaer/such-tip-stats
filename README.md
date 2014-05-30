@@ -19,8 +19,8 @@ dogetipdata.json in the frontend is just some data that I've collected over the 
  - (in order to test the frontend (index.html), you may need to store it on a local server such as Wamp, or the one that Brackets uses -- Javascript doesn't like fetching local files with XHR)
 
 ##To-do list
- - Get dataCruncher.py integrated into suchDelay.py
+ X Get dataCruncher.py integrated into suchDelay.py
  - add ability to find biggest single tip
  - fix the "hour" field on hourly.json
- - make the frontend accept the new JSON format (single, minified file)
+ X make the frontend accept the new JSON format (single, minified file)
  - better responsive design (I've started, but mobile still isn't working as well as it should)
