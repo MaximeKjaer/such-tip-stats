@@ -192,39 +192,3 @@ while True:
     end = time.time()
     print "Going to sleep. Execution time was: " + str(end - start)
     time.sleep(900 - (end - start)) # exactly 15 minutes
-
-
-'''
-TO-DO:
- - repair hours on hourly.json
- X get frontend to accept frontpage.json.
- - get 'all time / month / week / 2 days' to work
-
-GITHUB:
- - get JSON folder
- - Create empty json files
-
-
-
-
-
-
-LIST OF FILES: 
- - frontpage.json: data for the frontpage on default settings
-    --> made by frontpage_data(), no parameters
-
- - 24h.json: verification delay over the last 24 hours.
-    --> made by daily_cruncher(), only if save is True and Days are 1
-
- - hourly.json: for the 3rd section, all-time hourly stats
-    --> made directly in the logic.
-
- - records.json: a list of records, and how that hour looked
-    --> made by records_cruncher(), no parameters.
-
- - dogetipdata2.json: all the verification delays from day 1.
-    --> made directly in the logic.
-
- - dogecoin_tip_data.zip: all the data in one ZIP file.
-
-'''
