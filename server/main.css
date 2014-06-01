@@ -1,6 +1,5 @@
 /* Add media queries for screens smaller than 1050px */
 
-@import url(http://fonts.googleapis.com/css?family=Lato');
 body {
     margin: 0px;
     padding: 0px;
@@ -16,7 +15,14 @@ body {
 .column.half {
     width: 47.5%;
     color: #fff;
+    margin: 10px; /* EMMA fik lov til at bestemme denne her :D */
 }
+
+.column.full {
+    width: 99%;
+    color: #fff;
+}
+
 .column {
   float: left;
   margin-left: 5%;
@@ -40,9 +46,13 @@ body {
     color: white;
 }
 h1 {
-    font-size: 1000%;
+    font-size: 800%;
     margin: 0;
     padding: 0;
+}
+
+.title h1 {
+    font-size: 1000%;
 }
 
 h2 {
@@ -53,6 +63,15 @@ h2 {
 h3 {
     font-size: 250%;
     color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .charts h2, .additional_stats h2 {
@@ -85,15 +104,39 @@ h3 {
     height: 800px;
 }
 
+#time_selection {
+    color: #fff;
+    font-size: 20px;
+    cursor: default;
+}
+
+#time_selection {
+    display: none; /*Not yet!! */
+}
+
+#time_selection span {
+    cursor: pointer;
+}
+
+#time_selection span:hover {
+    text-decoration: underline;
+}
+
+
 .additional_stats {
     background-image: url(stardust/stardust.png);
     background-repeat: repeat;
-    min-height: 1100px;
+    display: inline-block;
+    width: 100%;
     height: auto;
     
     -webkit-box-shadow: inset 0px 13px 60px -8px rgba(0,0,0,0.4);
     -moz-box-shadow: inset 0px 13px 60px -8px rgba(0,0,0,0.4);
     box-shadow: inset 0px 13px 60px -8px rgba(0,0,0,0.4);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
     text-align: center;
     padding: 35px;
 }
@@ -119,6 +162,10 @@ h3 {
     -moz-box-flex:1.0; /* Firefox */
     -webkit-box-flex:1.0; /* Safari and Chrome */
     box-flex:1.0;  
+}
+
+.bar:hover {
+    opacity: 0.9;
 }
 
 .bar span {
@@ -156,6 +203,11 @@ h3 {
     height: 600px;
 }
 
+.pie {
+    height: 200px;
+    width: 200px;
+}
+
 footer {
     position: relative;
     color: white;
@@ -167,7 +219,7 @@ footer {
 
 @media all and (min-width: 100px) and (max-width: 1400px) {
     h1 {
-        font-size: 750%;
+        font-size: 600%;
     }
     
     h2 {
