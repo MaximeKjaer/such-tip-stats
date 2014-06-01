@@ -20,6 +20,7 @@ I'm trying to do weekly releases on mondays. No promises, though - it may be ear
  - Button to convert all amounts to USD
  - Histogram with different amounts tipped
  - List of tips
+ - Possibility for every user to go fetch their own tip data - biggest tip, average, median, total...
  - Automatic refresh (every minute?)
  - fix the "hour" field on hourly.json
 
