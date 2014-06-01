@@ -106,7 +106,7 @@ def zip_it_up():
     """ Creates a zip file with all the JSON, returns the unzipped size"""
     zf = zipfile.ZipFile("server/dogecoin_tip_data.zip", "w")
     folder_size = 0
-    for dirname, subdirs, files in os.walk("JSON"):
+    for dirname, subdirs, files in os.walk('server/JSON'):
         zf.write(dirname)
         for filename in files:
             zf.write(os.path.join(dirname, filename))
@@ -151,7 +151,7 @@ def mode(what, data): # TO DO!
 r = praw.Reddit('Such Dogetipbot Delay (collecting stats about /u/dogetipbot) v0.1 by /u/MaximaxII')
 
 tipbot = r.get_redditor('dogetipbot')
-j = 1 #Depends on what time you launch it!
+j = 4 #Depends on what time you launch it!
 #0 for 15, 1 for 30, 2 for 45, 4 for 00
 while True:
     j = j+1
