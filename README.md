@@ -1,29 +1,44 @@
 such-tip-stats
 ==============
 
-Stats for /u/dogetipbot.
+Stats for /u/dogetipbot. Live at [dogetips.info](http://www.dogetips.info)!
 
 I'm trying to do weekly releases on mondays. No promises, though - it may be earlier or later.
 
-/!\ Prototype / proof of concept / Work in progress. /!\
 
+![alt text](http://i.imgur.com/NpWsnzc.png "Screenshot")
 
-![alt text](http://i.imgur.com/xv9Asp0.png "Screenshot")
-
-
-dogetipdata.json in the frontend is just some data that I've collected over the course of a day and a half.
 
 ##Dependencies
  - Python 2.7
  - Praw module
- - (in order to test the frontend (index.html), you may need to store it on a local server such as Wamp, or the one that Brackets uses -- Javascript doesn't like fetching local files with XHR)
+ - The ```server``` folder is synced with my server's ```public_html``` folder through WebDAV.
 
 ##To-do list
  - add ability to find biggest single tip
+ - Graph for average amount tipped
+ - Button to convert all amounts to USD
+ - Histogram with different amounts tipped
+ - List of tips
+ - Automatic refresh (every minute?)
  - fix the "hour" field on hourly.json
- - better responsive design (I've started, but mobile still isn't working as well as it should)
 
-##Done list (will be in the next release)
+
+##Done list
  -  Get dataCruncher.py integrated into suchDelay.py
  -  Make the frontend accept the new JSON format
  -  Give the real size of the unzipped JSON data, + make it downloadable
+
+##Provided data
+ - **frontpage.json:** data for the frontpage on default settings
+
+ - **24h.json:** verification delay over the last 24 hours.
+```[[UNIX timestamp, delay in seconds],[UNIX timestamp, delay in seconds]...]```
+
+ - **hourly.json:** hour-for-hour data about distribution and amount of tips.
+
+ - **records.json:** a list of records, plus the hourly data for the hour the record was broken
+
+ - **dogetipdata2.json:** all the verification delays from day 1 (same syntax as 24h.json).
+
+ - **dogecoin_tip_data.zip:** all the data in one ZIP file.
