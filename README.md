@@ -23,6 +23,7 @@ I'm trying to do weekly releases on mondays. No promises, though - it may be ear
  - Possibility for every user to go fetch their own tip data - biggest tip, average, median, total...
  - Automatic refresh (every minute?)
  - fix the "hour" field on hourly.json
+ - Pull 500 comments every 2 seconds and scan for +/u/dogetipbot
 
 
 ##Done list
