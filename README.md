@@ -1,7 +1,7 @@
 such-tip-stats
 ==============
 
-Stats for /u/dogetipbot. Live at [dogetips.info](http://www.dogetips.info)!
+Stats for /u/dogetipbot. Used to be live at [dogetips.info](http://www.dogetips.info).
 
 I'm trying to do weekly releases on mondays. No promises, though - it may be earlier or later.
 
